@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+report/
+reports/
+# Logs
+logs
+*.log
+npm-debug.log*
+
+
+# Optional npm cache directory
+.npm
+# stryker temp files
+.stryker-tmp
+

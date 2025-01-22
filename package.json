@@ -1,0 +1,30 @@
+{
+  "name": "payment-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loanCalculator.js",
+  "scripts": {
+    "build": "echo 'Building the project...' && node src/loanCalculator.js",
+    "test": "jest",
+    "mutation": "stryker run",
+    "metrics": "es6-plato -r -d ./report ./src",
+    "lint": "eslint --config eslint.config.mjs src/",
+    "ci": "npm run lint && npm run test && npx stryker run && npm run metrics && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stryker-mutator/core": "^8.7.1",
+    "jest": "^29.7.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@stryker-mutator/jest-runner": "^8.7.1",
+    "es6-plato": "^1.2.3",
+    "eslint": "^9.17.0",
+    "eslint-plugin-jest": "^28.9.0",
+    "globals": "^15.14.0"
+  }
+}
